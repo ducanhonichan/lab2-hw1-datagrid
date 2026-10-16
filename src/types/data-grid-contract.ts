@@ -12,4 +12,5 @@ export interface DataGridProps<T> {
   columns: ColumnDef<T>[];
   onRowSelect?: (item: T) => void;
   ariaLabel: string;
+  getRowId?: (item: T) => string | number;
 }
